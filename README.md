@@ -1,4 +1,4 @@
-# Proyectos de aprendizaje de Djando
+# Proyectos de aprendizaje de Django
 
 En este proyecto recojo pequeños proyectos para aprender Django.
 Cada carpeta contiene un pequeño proyecto.
