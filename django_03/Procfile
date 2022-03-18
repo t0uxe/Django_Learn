@@ -1,0 +1,1 @@
+web: gunicorn panel_mensajes.wsgi --log-file -
