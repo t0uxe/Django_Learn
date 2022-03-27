@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio{% endblock title %}
+
+{% block content %}
+{% if user.is_authenticated %}
+¡Hola {{ user.username }}! Tienes {{ user.age }} años.
+<p><a href="{% url 'logout' %}">Cerrar sesión</a></p>
+{% else %}
+<p><a href="{% url 'login' %}">Iniciar sesión</a> | <a href="{% url 'signup' %}">Crear cuenta</a></p>
+{% endif %}
+
+{% endblock content %}

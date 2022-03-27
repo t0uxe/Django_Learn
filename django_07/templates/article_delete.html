@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}¿Deseas borrar  el artículo "{{ object.titulo }}"?{% endblock title %}
+
+{% block content %}
+<h1>Borrar</h1>
+    <form action="" method="post">{% csrf_token %}
+    <p>¿Estás seguro que quieres borrar el artículo {{ article.titulo }}?</p>
+<button class="btn btn-danger ml-2" type="submit">Borrar</button>
+</p>
+<p>Volver a <a href="{% url 'article_list' %}">todos los artículos</a></p>
+{% endblock content %}
